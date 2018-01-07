@@ -7,6 +7,8 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using HelloDocker.Web.Data;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace HelloDocker.Web
 {
@@ -14,7 +16,16 @@ namespace HelloDocker.Web
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+            var host = BuildWebHost(args);
+
+            using (var scope = host.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var context = services.GetRequiredService<HelloDockerWebContext>();
+                DbInitializer.Initialize(context);
+            }
+
+            host.Run();
         }
 
         public static IWebHost BuildWebHost(string[] args) =>

@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using HelloDocker.Web.Data;
 
 namespace HelloDocker.Web
 {
@@ -22,6 +24,9 @@ namespace HelloDocker.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            services.AddDbContext<HelloDockerWebContext>(options =>
+                    options.UseMySql(Configuration.GetConnectionString("HelloDockerWebContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
