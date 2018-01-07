@@ -1,0 +1,13 @@
+version: '2'
+services:
+    hellodocker-web:
+        container_name: hellodocker.web.compose
+        build: .
+
+    reverse-proxy:
+        container_name: reverse-proxy
+        image: nginx
+        ports:
+         - "9090:8080"
+        volumes:
+         - ./proxy.conf:/etc/nginx/conf.d/default.conf
