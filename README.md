@@ -1,4 +1,5 @@
 # Dockerize And Deploy ASP.NET Core 2.0 + Mysql + Nginx With Docker-Compose
+This is an example web application to show how to use ASP.Net Core with MySQL database and use Nginx as reverse proxy, and deploy using Docker-Compose.
 
 # How to use?
 1. `git clone https://github.com/yanshengjie/Docker.NetCore.MySql.git`
