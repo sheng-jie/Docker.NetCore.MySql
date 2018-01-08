@@ -1,4 +1,4 @@
-# 【ASP.NET Core 2.0 + Mysql + Nginx】容器化并部署@Docker-Compose
+# Dockerize And Deploy ASP.NET Core 2.0 + Mysql + Nginx With Docker-Compose
 
 # How to use?
 1. `git clone https://github.com/yanshengjie/Docker.NetCore.MySql.git`
@@ -6,3 +6,8 @@
 3. `docker-compose up -d`
 4. `curl -i http://localhost:9090/api/products`
 
+# Reference
+1. [mysql -Docker Documentation](https://docs.docker.com/samples/library/mysql/)
+2. [Hello Docker](https://www.jianshu.com/p/bc9ea9eaafe0)
+3. [.NET Core容器化@Docker](https://www.jianshu.com/p/23465dc86d3e)
+4. [.NET Core容器化之多容器应用部署@Docker-Compose](https://www.jianshu.com/p/1cf84a27de0f)
