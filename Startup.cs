@@ -21,7 +21,7 @@ namespace Docker.NetCore.MySql
         {
             services.AddMvc();
 
-            services.AddDbContext<HelloDockerWebContext>(options =>
+            services.AddDbContext<Data.MySqlDbContext>(options =>
                     options.UseMySql(Configuration.GetConnectionString("MySql")));
         }
 

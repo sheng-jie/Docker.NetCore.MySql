@@ -5,7 +5,7 @@ namespace Docker.NetCore.MySql.Data
 {
     public class DbInitializer
     {
-        public static void Initialize(HelloDockerWebContext context)
+        public static void Initialize(MySqlDbContext context)
         {
             context.Database.EnsureCreated();
 

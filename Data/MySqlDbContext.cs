@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Docker.NetCore.MySql.Data
 {
-    public class HelloDockerWebContext : DbContext
+    public class MySqlDbContext : DbContext
     {
-        public HelloDockerWebContext (DbContextOptions<HelloDockerWebContext> options)
+        public MySqlDbContext (DbContextOptions<MySqlDbContext> options)
             : base(options)
         {
         }

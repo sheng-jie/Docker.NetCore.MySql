@@ -12,9 +12,9 @@ namespace Docker.NetCore.MySql.Controllers
     [Route("api/Products")]
     public class ProductsController : Controller
     {
-        private readonly HelloDockerWebContext _context;
+        private readonly Data.MySqlDbContext _context;
 
-        public ProductsController(HelloDockerWebContext context)
+        public ProductsController(Data.MySqlDbContext context)
         {
             _context = context;
         }

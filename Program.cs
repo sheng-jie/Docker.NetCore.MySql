@@ -14,7 +14,7 @@ namespace Docker.NetCore.MySql
             using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
-                var context = services.GetRequiredService<HelloDockerWebContext>();
+                var context = services.GetRequiredService<MySqlDbContext>();
                 DbInitializer.Initialize(context);
             }
 
