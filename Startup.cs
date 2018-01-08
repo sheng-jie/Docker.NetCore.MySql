@@ -22,7 +22,7 @@ namespace Docker.NetCore.MySql
             services.AddMvc();
 
             services.AddDbContext<HelloDockerWebContext>(options =>
-                    options.UseMySql(Configuration.GetConnectionString("HelloDockerWebContext")));
+                    options.UseMySql(Configuration.GetConnectionString("MySql")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
