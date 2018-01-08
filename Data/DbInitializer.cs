@@ -1,10 +1,7 @@
-﻿using HelloDocker.Web.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Linq;
+using Docker.NetCore.MySql.Models;
 
-namespace HelloDocker.Web.Data
+namespace Docker.NetCore.MySql.Data
 {
     public class DbInitializer
     {

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace HelloDocker.Web.Models
+﻿namespace Docker.NetCore.MySql.Models
 {
     public class Product
     {

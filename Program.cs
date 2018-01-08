@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Docker.NetCore.MySql.Data;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
-using HelloDocker.Web.Data;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace HelloDocker.Web
+namespace Docker.NetCore.MySql
 {
     public class Program
     {

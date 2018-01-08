@@ -1,6 +1,4 @@
-using System;
-
-namespace HelloDocker.Web.Models
+namespace Docker.NetCore.MySql.Models
 {
     public class ErrorViewModel
     {

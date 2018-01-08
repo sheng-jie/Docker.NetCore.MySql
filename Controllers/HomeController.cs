@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
+using Docker.NetCore.MySql.Models;
 using Microsoft.AspNetCore.Mvc;
-using HelloDocker.Web.Models;
 
-namespace HelloDocker.Web.Controllers
+namespace Docker.NetCore.MySql.Controllers
 {
     public class HomeController : Controller
     {

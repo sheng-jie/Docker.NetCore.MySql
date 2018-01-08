@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+using Docker.NetCore.MySql.Data;
+using Docker.NetCore.MySql.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using HelloDocker.Web.Data;
-using HelloDocker.Web.Models;
 
-namespace HelloDocker.Web.Controllers
+namespace Docker.NetCore.MySql.Controllers
 {
     [Produces("application/json")]
     [Route("api/Products")]

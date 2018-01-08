@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Docker.NetCore.MySql.Models;
 using Microsoft.EntityFrameworkCore;
-using HelloDocker.Web.Models;
 
-namespace HelloDocker.Web.Data
+namespace Docker.NetCore.MySql.Data
 {
     public class HelloDockerWebContext : DbContext
     {
@@ -14,6 +10,6 @@ namespace HelloDocker.Web.Data
         {
         }
 
-        public DbSet<HelloDocker.Web.Models.Product> Products { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }
