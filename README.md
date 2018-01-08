@@ -1,6 +1,8 @@
-# 容器化【ASP.NET Core 2.0 + Mysql + Nginx】并部署@Docker-Compose
+# 【ASP.NET Core 2.0 + Mysql + Nginx】容器化并部署@Docker-Compose
 
 # How to use?
-`git clone https://github.com/yanshengjie/Docker.NetCore.MySql.git`
-`docker-compose up`
+1. `git clone https://github.com/yanshengjie/Docker.NetCore.MySql.git`
+2. `cd Docker.NetCore.MySql`
+3. `docker-compose up -d`
+4. `curl -i http://localhost:9090/api/products`
 
