@@ -3,9 +3,10 @@ services:
   db:
     container_name: hello.db
     image: mysql
-    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 123456
+    volumes:
+      - ./mysql:/var/lib/mysql
 
   web:
     container_name: hello.web
