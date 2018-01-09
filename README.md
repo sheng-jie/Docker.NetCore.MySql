@@ -7,6 +7,8 @@ This is an example web application to show how to use ASP.Net Core with MySQL da
 3. `docker-compose up -d`
 4. `curl -i http://localhost:9090/api/products`
 
+For detail reference:[.NET Core+MySql+Nginx 容器化部署](https://www.jianshu.com/p/2a755277a1e6)
+
 # Reference
 1. [mysql -Docker Documentation](https://docs.docker.com/samples/library/mysql/)
 2. [Hello Docker](https://www.jianshu.com/p/bc9ea9eaafe0)
